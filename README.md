@@ -1,6 +1,6 @@
-### 📘 **Enunciado Aprimorado do Desafio – Sistema Bancário Orientado a Objetos em Java**
+### 📘 **Sistema Bancário em Java - simulação mais avançada**
 
-Você foi contratada como desenvolvedora para implementar um **sistema bancário simplificado**, que simule o funcionamento básico de um banco digital. O objetivo é aplicar conceitos de **Programação Orientada a Objetos (POO)**, como **herança, encapsulamento, polimorfismo, abstração e boas práticas de projeto**.
+Este projeto tem por objetivo simular a criação, acesso e manipulação em contas bancárias (via terminal).
 
 #### 🏦 Cenário:
 
@@ -25,7 +25,7 @@ As operações disponíveis para ambas as contas são:
 Além disso, o sistema bancário deve gerenciar:
 
 * Um **cadastro de contas**
-* A **busca de contas por número**
+* A **busca de contas por número** (pra realização de transferências)
 * A **listagem de contas ativas**
 
 #### 📌 Requisitos obrigatórios:
@@ -36,15 +36,13 @@ Além disso, o sistema bancário deve gerenciar:
 4. **Implementar as operações** de depósito, saque e transferência.
 5. **Registrar um histórico de transações** (como: "Depósito de R\$ 500", "Transferência para conta 102 - R\$ 150").
 6. Utilizar **exceções personalizadas** para saques e transferências com saldo insuficiente.
-7. (Opcional) Adicionar um **gerador automático de número de conta**.
+7. Adicionar um **gerador automático de número de conta** e um **gerador de número de agência**.
 
-#### ✨ Requisitos adicionais (para quem desejar ir além):
+#### ✨ Requisitos adicionais que foram implementados:
 
-* Criar uma interface `OperacoesBancarias`, contendo a definição dos métodos `depositar`, `sacar`, e `transferir`.
-* Substituir o tipo `double` por `BigDecimal` para representar valores monetários.
-* Implementar um menu de texto no console para interagir com o sistema.
+* Interface `InterfaceConta`, contendo a definição dos métodos `depositar`, `sacar`, `transferir`, e `imprimirExtrato`.
+* Menu de texto no console para interagir com o sistema.
 * Permitir que o usuário consulte o **extrato** (histórico) da conta.
-* Aplicar princípios do **SOLID** sempre que possível.
 
 #### 🧪 Exemplo de cenário de uso:
 
@@ -58,14 +56,4 @@ Além disso, o sistema bancário deve gerenciar:
 7. Ambos os clientes visualizam o extrato com o histórico de suas transações.
 ```
 
----
-
-### 📋 Entrega esperada
-
-* Código-fonte organizado em classes.
-* Comentários explicativos sobre as decisões de projeto.
-* Demonstração do uso em uma classe `Main`.
-
----
-
-Se quiser, posso montar uma estrutura inicial com os arquivos e nomes de classes/métodos sugeridos para te ajudar a começar. Deseja isso?
+###### Projeto criado apenas utilizando a linguagem Java e conceitos básicos de POO e tratamento de exceções
