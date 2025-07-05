@@ -10,7 +10,6 @@ public class App {
 
         System.out.println("Olá! Seja bem-vindo(a) ao Banco Digital em Java!");
 
-        OUTER:
         while (true) {
             System.out.println("\nMenu Principal:");
             System.out.println("1 - Criar uma nova conta");
@@ -105,12 +104,10 @@ public class App {
                 case 3 -> banco.listarContasAtivas();
                 case 0 -> {
                     System.out.println("Obrigado por utilizar nosso sistema!");
-                    break OUTER;
+                    break;
                 }
                 default -> System.out.println("Opção inválida!");
             }
         }
-
-        scanner.close();
     }
 }

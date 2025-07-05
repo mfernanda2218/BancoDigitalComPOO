@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Conta {
+    //atributos de conta (que são comuns a todas as contas)
     protected String agencia;
     protected int numeroConta;
     protected String nomeTitular;
     protected double saldo;
     protected List<String> historico = new ArrayList<>();
 
+    // Construtor pra inicializar os atributos
     public Conta(String agencia, int numeroConta, String nomeTitular, double saldo) {
         this.agencia = agencia;
         this.numeroConta = numeroConta;
